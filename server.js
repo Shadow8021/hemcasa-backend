@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
-app.listen(3000, () => {
-  console.log("serveur en cours");
+require("dotenv").config();
+app.listen(process.env.PORT, () => {
+  console.log("serveur en cours sur", process.env.PORT);
 });
