@@ -3,6 +3,7 @@ const connectDb = require("./config/db");
 const app = express();
 require("dotenv").config();
 app.use(express.json());
+app.use(express.urlencoded());
 //connect to data base
 connectDb();
 //users routers
